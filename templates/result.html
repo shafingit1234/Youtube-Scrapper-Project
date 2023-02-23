@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Review Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+    <div class="table-users">
+        <div class="header">Reviews</div>
+
+        <table cellspacing="0">
+            <tr>
+                <th>Video Link URL</th>
+                <th>Title</th>
+                <th>Views</th>
+                <th>Thumbnail URL</th>
+                <th>Time</th>
+                <!-- <th width="230">Comments</th> -->
+            </tr>
+            {% for r in collection %}
+            <tr>
+                <td>{{r['link']}}</td>
+                <td>{{r['title']}}</td>
+                <td>{{r['view']}}</td>
+                <td>
+                    <p>{{r['thumbnail']}}</p>
+                </td>
+                <td>{{r['time']}} </td>
+                {% endfor %}
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
