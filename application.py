@@ -5,10 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS, cross_origin
-import logging
-import csv
-logging.basicConfig(
-    filename='Assignment_Youtube_Scrapper.log', level=logging.INFO)
+# import logging
+# import csv
+# logging.basicConfig(
+#     filename='Assignment_Youtube_Scrapper.log', level=logging.INFO)
 # creation of api's goes here:
 
 app = Flask(__name__)
@@ -79,19 +79,19 @@ def result():
         dict['view'] = views[i]
         dict['time'] = time[i]
         collection.append(dict)
-    header = ['video link', 'thumbnail Link', 'title', 'view', 'time']
-    # Code To create csv file.
-    with open('youtube_details.csv', 'w', encoding='UTF8', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(header)
-        for i in collection:
-            data = list()
-            data.append(i['link'])
-            data.append(i['thumbnail'])
-            data.append(i['title'])
-            data.append(i['view'])
-            data.append(i['time'])
-            writer.writerow(data)
+    # header = ['video link', 'thumbnail Link', 'title', 'view', 'time']
+    # # Code To create csv file.
+    # with open('youtube_details.csv', 'w', encoding='UTF8', newline='') as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(header)
+    #     for i in collection:
+    #         data = list()
+    #         data.append(i['link'])
+    #         data.append(i['thumbnail'])
+    #         data.append(i['title'])
+    #         data.append(i['view'])
+    #         data.append(i['time'])
+    #         writer.writerow(data)
 
     return render_template('result.html', collection=collection)
 
