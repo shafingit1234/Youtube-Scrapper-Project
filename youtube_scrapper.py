@@ -15,12 +15,14 @@ app = Flask(__name__)
 
 
 @app.route("/", methods=['GET'])
+@cross_origin()
 def home_page():
     # return render_template('index.html')
     return render_template('index.html')
 
 
 @app.route("/result", methods=['GET', 'POST'])
+@cross_origin()
 def result():
     links = []
     thumbnails = []
