@@ -19,7 +19,7 @@ Backend:
 ```
 # Snapshots Goes Below
 ## Home Page
-![Home Page of My Web Application Asking user to enter the youtube url on which scrapping will be performed](./assets/web_scrapper_1)
+![Home Page of My Web Application Asking user to enter the youtube url on which scrapping will be performed](./assets/web_scrapper_1.png)
 
 
 
