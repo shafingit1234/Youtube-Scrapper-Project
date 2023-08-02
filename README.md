@@ -21,5 +21,8 @@ Backend:
 ## Home Page
 ![Home Page of My Web Application Asking user to enter the youtube url on which scrapping will be performed](./assets/web_scrapper_1.png)
 
+## Scrapping Phase
+![](./assets/web_scrapper_2.png)
 
-
+## Final Result
+![Home Page of My Web Application Asking user to enter the youtube url on which scrapping will be performed](./assets/Web_scrapper_3.png)
