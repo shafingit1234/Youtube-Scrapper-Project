@@ -19,7 +19,7 @@ Backend:
 ```
 # Snapshots Goes Below
 ## Home Page
-![/assets/Web_scrapper_1]
+![](/assets/Web_scrapper_1)
 
 
 
