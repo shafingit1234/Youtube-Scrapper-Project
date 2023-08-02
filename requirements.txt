@@ -1,0 +1,6 @@
+flask
+pandas
+selenium
+pymongo
+flask_cors
+numpy
