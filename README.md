@@ -7,12 +7,12 @@ The details that were scraped off are afterwards saved in a mongodb database for
 ## Tech Stack Used:
 Frontend:
 ```
-HTML
-CSS
-Javascript
-```
+--HTML
+--CSS
+--Javascript
 ```
 Backend:
+```
 --Python
 --Flask
 --Mongodb
